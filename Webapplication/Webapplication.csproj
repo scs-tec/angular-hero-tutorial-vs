@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <TypeScriptToolsVersion>3.0</TypeScriptToolsVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\src\app\app.component.ts" />
+    <Content Remove="wwwroot\src\app\app.module.ts" />
+    <Content Remove="wwwroot\src\app\hero-detail\hero-detail.component.ts" />
+    <Content Remove="wwwroot\src\app\hero-service.ts" />
+    <Content Remove="wwwroot\src\app\hero.ts" />
+    <Content Remove="wwwroot\src\app\mock-heroes.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="wwwroot\src\app\app.component.ts" />
+    <TypeScriptCompile Include="wwwroot\src\app\app.module.ts" />
+    <TypeScriptCompile Include="wwwroot\src\app\hero-detail\hero-detail.component.ts" />
+    <TypeScriptCompile Include="wwwroot\src\app\hero-service.ts" />
+    <TypeScriptCompile Include="wwwroot\src\app\hero.ts" />
+    <TypeScriptCompile Include="wwwroot\src\app\mock-heroes.ts" />
+    <TypeScriptCompile Include="wwwroot\src\main.ts" />
+    <TypeScriptCompile Include="wwwroot\src\polyfills.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\src\app\heroes\" />
+  </ItemGroup>
+
+</Project>

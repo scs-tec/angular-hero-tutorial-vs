@@ -1,0 +1,25 @@
+{
+  "compileOnSave": false,
+
+  "compilerOptions": {
+    "outDir": "./wwwroot/src/javascript",
+    "noImplicitAny": false,
+    "noEmitOnError": true,
+    "removeComments": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "target": "es5"
+  },
+  "exclude": [
+    "node_modules"
+
+  ],
+
+  "lib": [
+    "es2017",
+    "dom"
+  ]
+}
